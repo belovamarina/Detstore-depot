@@ -4,6 +4,7 @@ class StoreControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
+    assert_select 'h3', 'Игровая площадка'
   end
 
 end
