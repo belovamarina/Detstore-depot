@@ -1,4 +1,6 @@
 class StoreController < ApplicationController
+	include CurrentCart
+	before_action :set_cart
 
 	def session_count
  	 session[:counter] ||= 0
