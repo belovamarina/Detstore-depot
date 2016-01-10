@@ -1,0 +1,6 @@
+if ($('#cart').length == 1) { $('#cart').hide(1000); }
+
+$('#cart tr').not('.total_line').remove();
+
+// $('#cart').html("<%= j render @cart %>");
+// $('#cart').hide('blind');
